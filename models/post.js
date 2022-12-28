@@ -1,10 +1,10 @@
-const { default: mongoose } = require('mongoose');
-const monngoose=require('mongoose');
+
+const mongoose=require('mongoose');
 
 
 const postSchema=new mongoose.Schema({
     content:{
-        type:string,
+        type:String,
         required:true
     },
     user:{
