@@ -1,10 +1,10 @@
-const moongoose=require('mongoose');
+const mongoose=require('mongoose');
 
 
-moongoose.connect('mongodb://localhost/codeial_development');
+mongoose.connect('mongodb://localhost/codeial_development');
 
 
-const db=moongoose.connection;
+const db=mongoose.connection;
 
 
 db.on('error',console.error.bind(console,"error connecting to mongodb"));

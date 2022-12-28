@@ -1,7 +1,21 @@
-body{
-    margin:0;
-    text-align:center;
-}
-h1{
-    color:red;
-}
+body {
+  margin: 0;
+  text-align: center; }
+  body #layout-main {
+    height: 100%; }
+
+h1 {
+  color: red; }
+
+.con {
+  text-align: right; }
+
+ul {
+  list-style: none; }
+  ul li {
+    display: inline;
+    list-style: none; }
+    ul li a {
+      color: black;
+      padding: 16px;
+      text-decoration: none; }
