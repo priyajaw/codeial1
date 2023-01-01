@@ -19,3 +19,8 @@ ul {
       color: black;
       padding: 16px;
       text-decoration: none; }
+
+#border-post {
+  border: 1px solid black;
+  width: 200px;
+  margin: 10px auto; }
