@@ -71,6 +71,9 @@ User.findOne({email:req.body.email},function(err,user){
 });
 }
 module.exports.createSession=function(req,res){
+
+    req.flash('success','logged in succesfully');
+   
 return res.redirect('/');
 }
 
@@ -80,7 +83,11 @@ module.exports.destroySession=function(req,res,next){
         if(err){
             return next(err);
         }
-        res.redirect('/');
+        req.flash('success','logged out');
+        return res.redirect('/');
     });
+    
+
+    
     
 }
